@@ -1,47 +1,123 @@
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin-left: -8px;
+    margin-right: -15px;
 }
 
-.nav li {
-    display: inline;
+nav {
+    display: flex;
+    background: black;
+    justify-content:space-between;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
 }
 
-.row {
-    column-count: 2;
+#logo {
+    color: aliceblue;
+    font-weight: bold;
+    font-size:30px;
+    margin-left: 10%;
 }
 
-#navigation {
+button {
     background-color: black;
-    color: white;
-    height: 50px;
-    margin: -10px;
+    border-style: none;
 }
 
-.column a {
-    text-decoration: none;
-    color: white;
-    vertical-align: middle;
-    line-height: 40px;
-    padding: 15px;
+button:hover {
+    background-color: cadetblue;
+
 }
 
-footer {
-    column-count: 2;
+button > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
 }
 
-.content {
-    column-count: 2;
-    height: 500px;
+header {
+    text-align: center;
+    background-color: aquamarine;
+    background-size: cover;
+    margin: 0;
 }
 
-.header {
+h1{
+    font-size: 50px;
+    padding-top: 20%;
+}
+
+header > h3 {
+    padding-bottom: 20%;
+}
+
+.About {
+    display: grid;
+    grid-template: "a a a" 40px
+        "b c c" 250px
+        "b c c" 250px / 1fr 1fr 1fr;        
+}
+
+#AboutMe {
+    grid-area: a;
     text-align: center;
 }
 
-#column2 {
-    text-align: right;
+#prof_pic {
+    grid-area: b;
+    height: 300px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    margin:auto;
+    }
+
+.about {
+    grid-area: c;  
+    text-align: justify;
+    padding: 15%;
+    line-height: 40px;
 }
 
-.contacts li {
-    text-align: right;
+.Services {
+    display: grid;
+    grid-template: "a a a" 40px
+        "b c d" 300px/ 1fr 1fr 1fr;
 }
+
+.Services > div {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#Services {
+    grid-area: a;
+    text-align: center;
+}
+
+#web_localization {
+    grid-area: b;
+}
+
+#translation{
+    grid-area: c;
+}
+
+#subtitles {
+    grid-area: d;
+}
+
+.testimonials {
+    display: 
+}
+
+footer {
+    background: black;
+}
+
+

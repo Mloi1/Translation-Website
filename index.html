@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <title>ML Localisation - Italian translation and localisation services</title>
-</head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>mLocalise - Italian translation and localisation services</title>
+    </head>
     <body>
-        <div class="row" id="navigation">
-            <div class="column" id="column1">
-                <ul class="nav">
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
+        <nav class="flex-container">
+            <div>
+                <a href="index.html" id="logo">mLocalise</a>
             </div>
-            <div class="column" id="column2">
-                <a href="">Italian</a>
-                <a href="">English</a>
+            <div id="dropcontent" class="sections">
+                <button><a href="#About">ABOUT</a></button>
+                <button><a href="#Services">SERVICES</a></button>
+                <button><a href="#Testimonials">TESTIMONIALS</a></button>
+                <button><a href="">PRICES</a></button>
+                <button><a href="">CONTACT ME</a></button>
             </div>
-        </div>
-        <section class="header">
-            <h1>ML-Localisation</h1>
-            <h3>English and Spanish to Italian professional linguist</h3>
-            <h4>Scroll down to learn more</h4>
-        </section>
-        <section class="content">
-            <div class="column" id="AboutMe">
-                <h3>About me</h3>
-                <p>...</p>
+        </nav>
+        <header>
+            <h1>mLocalise</h1>
+            <h3>Culturally aware.</h3>
+            <h5>Scroll down to learn more</h5>
+        </header>
+        <main>
+            <section class="wrapper About">
+                <h2 id="AboutMe">About me</h2>
+                <img src="images/me.jpg" alt="profile_picture" id="prof_pic">
+                <p class="about">Hi, my name is Martina and I am a professional linguist with a passione for digital technology.<br> I hold a MA in Specialised Translation and Conference Interpreting and a PostGraduate Certificate in Web Design and Development. I work mainly from Spanish and English to Italian. You can trust to take your words, digital or nor, to the next level.</p>     
+            </section>
+            <section class="wrapper Services">
+                <h2 id="Services">Services</h2>
+                <div id="web_localization">
+                    <h3>Website Localization</h3>
+                    <p>With my knowledge of web design and development, I can help your website achieve its full potential and reach out your audience. I will also happily collaborate with your developers and designers to make your website culturally aware.</p>
+                </div>
+                <div id="translation">
+                    <h3>Specialised Translation</h3>
+                    <p>I specialise in healthcare, digital technologies and social sciences.<br> Not what you were looking for? <a href="">Get in touch</a> to see if I can help you through my network of professional linguists.</p>
+                </div>
+                <div id="subtitles">
+                    <h3>Transcriptions and Subtitles</h3>
+                    <p>Whether you need to transcribe minutes of a meeting, create subtitles to a promotional video, a conference video or other, you can rest assured to work with a professional who knows the right requirements.</p>
+                </div>
+            </section>
+            <section class="wrapper testimonials">
+                <h2>Testimonials</h2>
+            </section>
+        </main>
+        <footer class="flex-container">
+            <img src="images/SDL_Trados_Studio_Web_Icons_01.jpg">
+            <div class="socialmedia">
+                <a href="https://www.linkedin.com/in/martinaloi/"><img src="images/In-2C-14px.png" alt="LinkedIn_logo"></a>
+                <i class="far fa-envelope">martina.loi024@gmail.com</i>
+
             </div>
-            <div class="column" id="Quote">
-                <form action="Request a quote">
-                    <p>Quote</p>
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" placeholder="Name" required/>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="email address" required/>
-                    <label for="message">Message</label>
-                    <input type="text" id="message" placeholder="Type your message" required/>
-                    <input type="submit" value="Submit"/>
-                </form>
-            </div>
-        </section>
-        <footer>
-            <table>
-                <tr>
-                    <th>Professional Accreditations</th>
-                    <th class="contacts">Contacts</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <ul class="contacts">
-                            <li>telephone</li>
-                            <li>email</li>
-                            <li>LinkedIn</li>
-                            <li>Skype</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
         </footer>
     </body>
 </html>
