@@ -1,0 +1,47 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav li {
+    display: inline;
+}
+
+.row {
+    column-count: 2;
+}
+
+#navigation {
+    background-color: black;
+    color: white;
+    height: 50px;
+    margin: -10px;
+}
+
+.column a {
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+    line-height: 40px;
+    padding: 15px;
+}
+
+footer {
+    column-count: 2;
+}
+
+.content {
+    column-count: 2;
+    height: 500px;
+}
+
+.header {
+    text-align: center;
+}
+
+#column2 {
+    text-align: right;
+}
+
+.contacts li {
+    text-align: right;
+}
