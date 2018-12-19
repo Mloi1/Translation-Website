@@ -5,34 +5,35 @@ body {
 }
 
 .flex-container.top {
+    display: flex;
     background: black;
     justify-content:space-between;
     margin-bottom: 0;
     overflow: hidden;
     position: fixed;
     top: 0;
-    z-index: 1;
     width: 100%;
     height: 10vh;
-    margin: 0 -20px 0 0;
+    left: 0;
 }
 
 #logo {
     color: aliceblue;
     font-weight: bold;
     font-size:30px;
-    margin-left: 10%;
+    margin-left: 10%; 
 }
 
 button {
     background-color: black;
     border-style: none;
+    padding:  15px 32px;
+    height: 100%;
 }
 
 button:hover {
-    background-color: cadetblue;
-
-}
+    background-color: lightblue;    
+    }
 
 button > a {
     font-size: 18px;
@@ -40,13 +41,19 @@ button > a {
     color: aliceblue;
 }
 
+.scrollable {
+    display: grid;
+    grid-template-rows:5(repeat, 1fr);
+}
+
 header {
     text-align: center;
     background-image: url(images/IMG_02093.2MB.jpg);
     background-size: cover;
     margin: 0;
-    height: 80vh;
+    height: 100vh;
     margin-right: -15px;
+    grid-row: 1;
 }
 
 h1{
@@ -60,10 +67,11 @@ header > h3 {
 }
 
 .About {
+    grid-area: 2;
     display: grid;
-    grid-template: "a a a" 40px
-        "b c c" 250px
-        "b c c" 250px / 1fr 1fr 1fr;        
+    grid-template: "a a a" 
+        "b c c" 
+        "b c c";        
 }
 
 #AboutMe {
@@ -73,12 +81,12 @@ header > h3 {
 
 #prof_pic {
     grid-area: b;
-    height: 300px;
+    height: 30vh;
     border-radius: 50%;
     border-style: solid;
     border-color: black;
     margin:auto;
-    }
+}
 
 .about {
     grid-area: c;  
@@ -88,39 +96,49 @@ header > h3 {
 }
 
 .Services {
+    grid-row: 3;
     display: grid;
-    grid-template: "a a a" 40px
-        "b c d" 300px/ 1fr 1fr 1fr;
+    grid-template: "a a a" 
+        "b c d"
+        "e f g";
+    background-color: lightblue;
+    margin-right: -10px;
+    column-gap: 10%;
 }
 
 .Services > div {
-    padding-top: 50px;
+    padding-top: 5px;
     text-align: center;
+    line-height: 40px;
 }
 
 #Services {
-    grid-area: a;
-    text-align: center;
+    grid-area: a;    text-align: center;
+}
+
+.service1, .service2, .service3 {
+    border-bottom: 1px solid black;
 }
 
 #web_localization {
-    grid-area: b;
+    grid-area: c;
+    padding: 10px;
+    
 }
 
 #translation{
-    grid-area: c;
-}
+    grid-area: d;
+ }
 
 #subtitles {
-    grid-area: d;
-}
-
-.testimonials {
-    display: 
+    grid-area: e;
 }
 
 footer {
+    display: flex;
+    justify-content: space-around;
     background: black;
+    margin-right: -10px;
 }
 
 
