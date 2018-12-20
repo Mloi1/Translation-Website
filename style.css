@@ -22,6 +22,8 @@ body {
     font-weight: bold;
     font-size:30px;
     margin-left: 10%; 
+    position: relative;
+    top: 27%;
 }
 
 button {
@@ -59,7 +61,7 @@ header {
 h1{
     font-size: 50px;
     padding-top: 20%;
-    opacity: 1;
+    background-blend-mode: 
 }
 
 header > h3 {
@@ -71,7 +73,8 @@ header > h3 {
     display: grid;
     grid-template: "a a a" 
         "b c c" 
-        "b c c";        
+        "b c c";  
+    padding: 0 5%;
 }
 
 #AboutMe {
@@ -104,6 +107,7 @@ header > h3 {
     background-color: lightblue;
     margin-right: -10px;
     column-gap: 10%;
+    padding: 0 5%;   
 }
 
 .Services > div {
