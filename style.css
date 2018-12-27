@@ -15,11 +15,11 @@ body {
     width: 100%;
     height: 10vh;
     left: 0;
-    z-index: 1; /* Added this property to avoid form in the contact page covering the navigation bar when scrolling*/
+    z-index: 2; /* Added this property to avoid form in the contact page covering the navigation bar when scrolling*/
 }
 
 ul > li {
-    display: inline-block;    
+    display: inline-block; 
 }
 
 #logo {
@@ -35,7 +35,6 @@ button {
     background-color: black;
     border-style: none;
     padding:  15px 32px;
-    height: 100%;
     color: aliceblue;
     font-size: 18px;
     font-weight: bold;
@@ -54,7 +53,6 @@ button:hover {
 
 heading {
     text-align: center;
-    background-image: url(images/IMG_02093.2MB.jpg);
     background-size: cover;
     margin: 0;
     height: 100vh;
@@ -64,15 +62,30 @@ heading {
 
 h1{
     font-size: 80px;
+    border-bottom: 2px solid black;s
+    color: black;
+    position: relative;
     padding-top: 20%;
-    border-bottom: 2px solid white;
-    color: white;
+    z-index: 1;
 }
 
 heading > h2 {
     padding-bottom: 20%;
-    color: white;
+    color: black;
     font-family: 'Major Mono Display', monospace;
+    z-index: 2;
+}
+
+#London {
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.main {
+    z-index: 1;
 }
 
 .About {
@@ -82,6 +95,7 @@ heading > h2 {
         "b c c" 
         "b c c";  
     padding: 0 5%;
+    background: white;
 }
 
 #AboutMe {
@@ -128,7 +142,7 @@ p {
     background-color: lightblue;
     margin-right: -10px;
     column-gap: 10%;
-    padding: 0 5%;   
+    padding: 3% 5%;   
 }
 
 .Services > div {
@@ -138,7 +152,8 @@ p {
 }
 
 #Services {
-    grid-area: a;    text-align: center;
+    grid-area: a;    
+    text-align: center;
 }
 
 .service1, .service2, .service3 {
@@ -158,8 +173,13 @@ p {
     grid-area: e;
 }
 
-.Prices {
-    padding: 0 5%;
+#Prices {
+    padding: 3% 5%;
+    background-color: white;
+}
+
+.accessory_info {
+    text-align: center;
 }
 
 footer {
@@ -167,15 +187,38 @@ footer {
     justify-content: space-around;
     background: black;
     margin-right: -10px;
+    padding: 20px;
 }
 
-#Trados {
-    padding: 4%
+#contact-me {
+    margin-bottom: 2%;
+    background-color: blue;
+}
+
+#contact-me:hover {
+    opacity: 0.6;
+    color: white;
+}
+
+.socialmedia {
+    display: flex;
+    align-items: flex-end;
+    font-size: 18px;
 }
 
 i {
-    color: white;
+    color: white; 
 }
+
+.icon {
+      margin: 0 8px 0 30px;
+    height: 23px;
+   
+}
+.contactdetails {
+    color: dodgerblue;
+}
+
 
 /* style of page 2 elements starts here*/
 
@@ -220,7 +263,6 @@ textarea {
     background-color: black;
     color: white;
     text-decoration: none;
-    background-image: linear-gradient(bottom, rgb(79,142,191) 0%, rgb(102,166,214) 100%);
     border: 1px solid;
 }
 

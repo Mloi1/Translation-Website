@@ -10,30 +10,31 @@
         <title>mLocalise - Italian translation and localisation services</title>
     </head>
     <body>
-        
+
         <!--Start page header-->
-        
+
         <header role="banner" class="flex-container top">
             <div>
                 <a href="index.html" id="logo">mLocalise</a>
             </div>
             <nav role="navigation">
-                <ul>
-                    <li><a href="#AboutMe"><button>ABOUT</button></a></li>
-                    <li><a href="#Services"><button>SERVICES</button></a></li>
-                    <li><a href=""><button>PRICES</button></a></li>
-                    <li><a href="pages/contacts.html"><button>CONTACT ME</button></a></li>
+                <ul class="navigation">
+                    <li><a href="#AboutMe"><button class="navigation-button">ABOUT</button></a></li>
+                    <li><a href="#Services"><button class="navigation-button">SERVICES</button></a></li>
+                    <li><a href="#Prices"><button class="navigation-button">PRICES</button></a></li>
+                    <li><a href="pages/contacts.html"><button class="navigation-button">CONTACT ME</button></a></li>
                 </ul>
             </nav>
         </header>
         <section class="wrapper scrollable">
+            <div class="background"><img id="London" src="images/IMG_02093.2MB.jpg" alt="CityofLondon"></div>
             <heading>
                 <h1>mLocalise</h1>
                 <h2>Culturally aware.</h2>
             </heading>
-            
+
             <!-- Start main content-->
-            
+
             <main role="main">
                 <article class="wrapper About">
                     <h2 id="AboutMe">About me</h2>
@@ -55,27 +56,34 @@
                         <p id="subtitles">Whether you need to transcribe minutes of a meeting, create subtitles to a promotional video, a conference video or other, you can rest assured to work with a professional who knows the right requirements.<br> <br> Click <a href="http://www.cinelatinotrieste.org/fest2011/fotogallery.php?dir_name=foto%2Fgallery%2F&dir=09%20Foto%20di%20mercoledi%2026%20ottobre">here</a> to see me at the Latin-American Film Festival in Trieste, Italy.
                     </section>
                 </article>
-                <section class="Prices">
-                    <h2>Price Guidelines</h2>
+                <article id="Prices">
+                    <div class="accessory_info">
+                        <h2>Price Guidelines</h2>
+                        <p>The following information provides an indication of how prices are calculated and what additional aspects have to be considered for each service.</p>
+                    </div>
                     <ul>
-                        <li><h4>Website Localization:</h4></li>
-                        <li><h4>Translation:</h4></li>
-                        <li><h4>Subtitling and Transcription:</h4></li>
+                        <li><h3>Website Localization:</h3><p>The localization price varies according to the level of analysis and work required on a website. The rate is usually calculated per hour. A brief on regarding your customer base, business objectives, as well as any style requirements will improve the result.</p></li>
+                        <li><h3>Translation:</h3><p>translation rates depends on the level of specialization of the source text and the language combination. The standard rate for English to Italian translation is around £60 every 1000 words. Please bare in mind  that my daily output is usually 1500-2000 words. The file needs to be in editable format (Word is preferred). The more information you can provide on the target audience and context of the text, the more accurate and efficient the translation will be.</p></li>
+                        <li><h3>Interpreting:</h3><p>Intepreting rates are calculated per hour and vary depending on the type of interpreting required (conference, liaison,or whispered). Travel cost and time will have to be taken into consideration for preparation and price.</p></li>
+                        <li><h3>Subtitling and Transcription:</h3><p>Rates for subtitling and transcription are calculated by minute of video or audio. Feel free to send an extract, so I can better assess the situation.</p></li>
                     </ul>
-
-                </section>
+                    <div class="accessory_info">
+                        <p>Do you have all the information ready or are you keen to learn more?</p>
+                        <a href="pages/contacts.html"><button id="contact-me">Contact me</button></a>
+                    </div>
+                </article>
             </main>
         </section>
-        
+
         <!-- Start page footer -->
-        
+
         <footer role="contentinfo" class="flex-container">
             <img id="Trados" src="images/SDL_Trados_Studio_Web_Icons_01.jpg" alt="I_work_with_SDL_Trados">
-            <div class="socialmedia">
-                <a href="https://www.linkedin.com/in/martinaloi/"><img src="images/In-2C-14px.png" alt="LinkedIn_logo"></a>
-                <i class="far fa-envelope">martina.loi024@gmail.com</i>
+            <div class="socialmedia flex-container">
+                <a href="https://www.linkedin.com/in/martinaloi/"><img src="images/In-2C-14px.png" alt="LinkedIn_logo" class="icon"></a><a class="contactdetails" href="https://www.linkedin.com/in/martinaloi">https://www.linkedin.com/in/martinaloi/</a>
+                <i class="far fa-envelope icon"><a href="mailto:martina.loi024@gmail.com"></a></i><a href="mailto:martina.loi024@gmail.com" class="contactdetails">martina.loi024@gmail.com</a>
             </div>
-        </footer>
+</footer>
         <script type="text/javascript" src='https://amara.org/embedder-iframe'></script>
     </body>
 </html>
