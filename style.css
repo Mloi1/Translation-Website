@@ -14,24 +14,46 @@ header {
     top: 0;
     width: 100%;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
-ul > li {
-    display: inline-block; 
-}
+/*ul > li {
+display: inline-block; 
+}*/
 
 #logo {
     color: aliceblue;
     font-weight: bold;
     font-size:30px;
-    margin-left: 10%; 
-    position: relative;
+    padding-left: 10px; 
+    position: absolute;
     top: 27%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+} 
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+}
+
+.dropdown:hover .dropdown  {
+    display: block;
+} 
+
+.dropbtn {
+    cursor: pointer;
 }
 
 nav {
     padding: 0;
+      z-index: 2;
 }
 
 ul.navigation {
@@ -41,7 +63,7 @@ ul.navigation {
 .navigation-button {
     background-color: black;
     border-style: none;
-    padding:  30px 32px;
+    padding:  30px;
     color: aliceblue;
     font-size: 18px;
     font-weight: bold;
@@ -63,15 +85,14 @@ heading {
     text-align: center;
     background-image: url(images/IMG_02093.2MB_opaque.jpg);
     background-size: cover;
-    margin-right: -15px;
     grid-row: 1;
+    z-index: 1;
 }
 
 h1{
     font-size: 80px;
     border-bottom: 2px solid black;s
     color: black;
-    position: relative;
     padding-top: 20%;
 }
 
@@ -166,9 +187,17 @@ p {
     grid-area: e;
 }
 
+span {
+        color: mediumvioletred;
+    }
+ 
 #Prices {
     padding: 3% 5%;
     background-color: white;
+}
+
+.price-descr {
+    color: mediumvioletred;
 }
 
 .accessory_info {
@@ -208,7 +237,7 @@ footer {
 
 .socialmedia {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     font-size: 18px;
 }
 
@@ -240,25 +269,20 @@ iframe {
 
 /* Media Query starts here */
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 1072px) {
     
-    header {
-        flex-direction: column;
-        align-items: center;
+    h1 {
+        font-size: 50px;
     }
-    
-    ul > li {
-    display: block;  
-}
-    
-    .navigation-button {
-        padding: 15px;
+
+    heading > h2 {
+        font-size: 27px;
     }
     
     #prof_pic {
         display: none;
     }
-    
+
     .Services {
         grid-template: "a"
             "b"
@@ -269,13 +293,14 @@ iframe {
     #info {
         flex-direction: column;
     }
-    
+
     #Trados {
         max-width: 200px;
     }
-    
+
     .socialmedia {
-        flex-direction: column;
+        display: none;
     }
-    
+
 }
+
