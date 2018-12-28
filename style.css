@@ -8,14 +8,14 @@ body {
     display: flex;
     background: black;
     justify-content:space-between;
-    margin-bottom: 0;
+    margin: 0;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     height: 10vh;
     left: 0;
-    z-index: 2; /* Added this property to avoid form in the contact page covering the navigation bar when scrolling*/
+    z-index: 2;
 }
 
 ul > li {
@@ -31,17 +31,25 @@ ul > li {
     top: 27%;
 }
 
-button {
+nav {
+    padding: 0;
+}
+
+ul.navigation {
+    margin: 0;
+}
+
+.navigation-button {
     background-color: black;
     border-style: none;
-    padding:  15px 32px;
+    padding:  30px 32px;
     color: aliceblue;
     font-size: 18px;
     font-weight: bold;
     text-decoration: underline;
 }
 
-button:hover {
+.navigation-button:hover {
     background-color: lightblue; 
     color: black;
 }
@@ -84,9 +92,6 @@ heading > h2 {
     z-index: -1;
 }
 
-.main {
-    z-index: 1;
-}
 
 .About {
     grid-area: 2;
@@ -193,6 +198,12 @@ footer {
 #contact-me {
     margin-bottom: 2%;
     background-color: blue;
+    color: white;
+    padding: 20px; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    font-weight: bold;
 }
 
 #contact-me:hover {
@@ -211,12 +222,13 @@ i {
 }
 
 .icon {
-      margin: 0 8px 0 30px;
+    margin: 0 8px -5px 30px;
     height: 23px;
-   
+
 }
 .contactdetails {
     color: dodgerblue;
+    font-weight: bold;
 }
 
 
@@ -227,46 +239,27 @@ i {
     justify-content: center;
 }
 
-#Getintouch {
-    position: relative;
-    top: 150px;
+iframe {
+    margin-top: 20vh;
 }
 
-form {
-    display:grid;
-    grid-area: repeat(10, 1fr) / repeat(6, 1fr);
-    background-color:lightblue;
-    width: 20%;
-    padding: 5%;
-    border-style: solid;
-    border-color: gainsboro;
-    border-width: thick;
-    line-height: 50px;
-    box-shadow: 10px 10px 8px #888888;
-    position:relative;
-    margin: 250px auto;
-    align-items: center;
-}
+/* Media Query starts here */
 
-label {
-    display: block;
+@media only screen and (max-width: 768px) {
+    
+    .flex-container.top {
+        flex-direction: column;
+        height: 30vh;
+        align-items: center;
+        
+    }
+    
+    ul > li {
+    display: block;  
 }
-
-textarea {
-    height: 200px;
-    margin-bottom: 15%;
+    
+    .navigation-button {
+        padding: 15px;
+    }
+    
 }
-
-#send {
-    border-radius: 5%;
-    margin: auto;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border: 1px solid;
-}
-
-#send:hover {
-    opacity: 0.7;
-}
-
