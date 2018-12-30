@@ -281,6 +281,7 @@ iframe {
     
     heading {
         margin-right: -15px;
+        background-image:url(images/IMG_0209_971KB.jpg);
     }
     
     h1 {
@@ -289,6 +290,15 @@ iframe {
 
     heading > h2 {
         font-size: 27px;
+    }
+    
+    .dropdown:active .dropdown-content {
+    display: block;
+} 
+    .below {
+        padding-top:  15px;
+        padding-bottom: 15px;
+        font-size: 15px;
     }
     
     #prof_pic {
@@ -316,6 +326,14 @@ iframe {
 
     .socialmedia {
         display: none;
+    }
+    
+    .back {
+       font-size: 15px; 
+    }
+    
+    iframe {
+        width: 300px;
     }
 }
 

@@ -17,23 +17,23 @@
             <div>
                 <a href="index.html" id="logo">mLocalise</a>
             </div>
-            <div class="socialmedia flex-container"> 
-                    <div class="LinkedIn">
-                        <a href="https://www.linkedin.com/in/martinaloi/" target="_blank"><img src="images/In-2C-14px.png" alt="LinkedIn_logo" class="icon"></a><a class="contactdetails" href="https://www.linkedin.com/in/martinaloi" target="_blank">https://www.linkedin.com/in/martinaloi</a>
+            <div class="socialmedia-top"> 
+                <div class="LinkedIn">
+                    <a href="https://www.linkedin.com/in/martinaloi/" target="_blank"><img src="images/In-2C-14px.png" alt="LinkedIn_logo" class="icon"></a><a class="contactdetails" href="https://www.linkedin.com/in/martinaloi" target="_blank">https://www.linkedin.com/in/martinaloi</a>
                 </div>
-                    <div class="email-address">
-                        <a href="mailto:martina.loi024@gmail.com"><i class="far fa-envelope icon"></i></a><a href="mailto:martina.loi024@gmail.com" class="contactdetails">martina.loi024@gmail.com</a>
+                <div class="email-address">
+                    <a href="mailto:martina.loi024@gmail.com"><i class="far fa-envelope icon"></i></a><a href="mailto:martina.loi024@gmail.com" class="contactdetails">martina.loi024@gmail.com</a>
                 </div>
-                </div>
-                <nav role="navigation" class="dropdown">
-                    <button class="dropbtn navigation-button"><i class="fas fa-bars" id="menu"></i></button>
-                    <ul class="navigation dropdown-content">
-                        <li><a href="#AboutMe"><button class="navigation-button">ABOUT</button></a></li>
-                        <li><a href="#Services"><button class="navigation-button">SERVICES</button></a></li>
-                        <li><a href="#Prices"><button class="navigation-button">PRICES</button></a></li>
-                        <li><a href="pages/contacts.html"><button class="navigation-button">CONTACT ME</button></a></li>
-                    </ul>
-                </nav>
+            </div>
+            <nav role="navigation" class="dropdown">
+                <button class="dropbtn navigation-button"><i class="fas fa-bars" id="menu"></i></button>
+                <ul class="navigation dropdown-content collapsible">
+                    <li><a href="#AboutMe"><button class="navigation-button below">ABOUT</button></a></li>
+                    <li><a href="#Services"><button class="navigation-button below">SERVICES</button></a></li>
+                    <li><a href="#Prices"><button class="navigation-button below">PRICES</button></a></li>
+                    <li><a href="pages/contacts.html"><button class="navigation-button below">CONTACT ME</button></a></li>
+                </ul>
+            </nav>
         </header>
 
         <section class="wrapper scrollable">
@@ -97,6 +97,23 @@
                 </div>
             </div>
         </footer>
-        <script type="text/javascript" src='https://amara.org/embedder-iframe'></script>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                });
+            }
+        </script>
+        <script>
+            </script>
     </body>
 </html>
