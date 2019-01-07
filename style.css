@@ -2,9 +2,9 @@
 html {
     width: 100%;
 }
-    
-    body {
-    font-family: 'Raleway', sans-serif;
+
+body {
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     margin: 0;
 }
@@ -23,12 +23,12 @@ header {
 }
 
 #logo {
+    font-family: 'Nova Mono', monospace;
     color: aliceblue;
     font-weight: bold;
     font-size:30px;
     padding-top: 20px;
     padding-left: 25px;
-    /* position: absolute;*/
     float: left;
 }
 
@@ -49,7 +49,7 @@ header {
     min-width: 160px;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content {
     display: block;
 } 
 
@@ -59,7 +59,7 @@ header {
 
 nav {
     padding: 0;
-      z-index: 2;
+    z-index: 2;
 }
 
 ul.navigation {
@@ -67,6 +67,7 @@ ul.navigation {
 }
 
 .navigation-button {
+    font-family: 'Open Sans', sans-serif;
     background-color: black;
     border-style: none;
     padding-top:  30px;
@@ -79,7 +80,7 @@ ul.navigation {
     cursor: pointer;
 }
 
-.navigation-button:hover {
+.navigation-button:hover, .navigation-button:focus {
     background-color: lightblue; 
     color: black;
 }
@@ -100,6 +101,7 @@ heading {
 }
 
 h1{
+    font-family: 'Nova Mono', monospace;
     font-size: 80px;
     border-bottom: 2px solid black;s
     color: black;
@@ -107,9 +109,9 @@ h1{
 }
 
 heading > h2 {
+    font-family: "Open Sans", sans-serif;
     padding-bottom: 20%;
     color: black;
-    font-family: 'Major Mono Display', monospace;
 }
 
 .About {
@@ -120,6 +122,10 @@ heading > h2 {
         "b c c";  
     padding: 0 5%;
     background: white;
+}
+
+.language{
+    color: mediumvioletred;
 }
 
 #AboutMe {
@@ -198,9 +204,9 @@ p {
 }
 
 span {
-        color: mediumvioletred;
-    }
- 
+    color: mediumvioletred;
+}
+
 #Prices {
     padding: 3% 5%;
     background-color: white;
@@ -226,13 +232,13 @@ footer {
     background-color: blue;
     color: white;
     padding: 20px; 
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nova Mono', monospace;
     font-size: 20px;
     border-radius: 15px;
     font-weight: bold;
 }
 
-#contact-me:hover {
+#contact-me:hover, #contact-me:focus {
     opacity: 0.6;
     color: white;
 }
@@ -278,12 +284,12 @@ iframe {
 /* Media Query starts here */
 
 @media (max-width: 1055px) {
-    
+
     heading {
         margin-right: -15px;
         background-image:url(images/IMG_0209_971KB.jpg);
     }
-    
+
     h1 {
         font-size: 50px;
     }
@@ -291,19 +297,25 @@ iframe {
     heading > h2 {
         font-size: 27px;
     }
-    
-    .dropdown:active .dropdown-content {
-    display: block;
-} 
+
     .below {
         padding-top:  15px;
         padding-bottom: 15px;
         font-size: 15px;
     }
-    
+
     #prof_pic {
         display: none;
     }
+    
+    .about {
+          padding: 5%;
+         line-height: 20px;
+    }
+    
+    p {
+    font-size: 18px;
+}
 
     .Services {
         grid-template: "a"
@@ -311,7 +323,7 @@ iframe {
             "c"
             "d"
     }
-    
+
     #info {
         flex-direction: column;
     }
@@ -319,7 +331,7 @@ iframe {
     #Trados {
         max-width: 200px;
     }
-    
+
     .socialmedia-top {
         display: none;
     }
@@ -327,11 +339,11 @@ iframe {
     .socialmedia {
         display: none;
     }
-    
+
     .back {
-       font-size: 15px; 
+        font-size: 15px; 
     }
-    
+
     iframe {
         width: 300px;
     }
